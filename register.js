@@ -1,78 +1,24 @@
 let ka = document.getElementById("ka");
 let en = document.getElementById("en");
+const passwordInput = document.getElementById('password');
+const passwordStrengthMessage = document.getElementById('passwordStrength');
 const form = document.querySelector('.registration-form');
 const emailInput = document.getElementById('email');
-
+const idInput = document.getElementById('id');
 async function fetchJSON(lang) {
     const url = lang === 'ka' ? 'enums/ka.json' : 'enums/en.json';
     const response = await fetch(url);
     return response.json();
 }
-
-async function changeLanguage(lang) {
-    const data = await fetchJSON(lang);
-
-    document.querySelectorAll("h2, h3").forEach(el => {
-        if (data[el.id]) {
-            el.textContent = data[el.id];
+function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i].trim();
+        if (cookie.startsWith(name + '=')) {
+            return cookie.substring(name.length + 1);
         }
-    });
-
-    document.querySelectorAll("span").forEach(el => {
-        if (data[el.id]) {
-            el.textContent = data[el.id];
-        }
-    });
-
-    document.querySelectorAll("button").forEach(el => {
-        if (data[el.id]) {
-            el.textContent = data[el.id];
-        }
-    });
-
-    document.querySelectorAll("input").forEach(el => {
-        if (data[el.id]) {
-            el.placeholder = data[el.id];
-        }
-    });
-    document.querySelectorAll("label").forEach(el => {
-        if (data[el.id.replace("Label","")]) {
-            el.textContent = data[el.id.replace("Label","")];
-        }
-    });
-
+    }
+    return null;
 }
-document.addEventListener("DOMContentLoaded", () => {
-  en.addEventListener("click", () => {
-    changeLanguage("en");
-});
-
-ka.addEventListener("click", () => {
-    changeLanguage("ka");
-});
-});
-
-form.addEventListener('submit', (event) => {
-    const email = emailInput.value.trim();
-
-    if (!isValidEmail(email)) {
-        event.preventDefault();
-        alert('ელ.ფოსტა არ არის ვალიდური. გთხოვთ შეიყვანოთ სწორი ელ.ფოსტა.');
-    }
-});
-
-function isValidEmail(email) {
-    const atIndex = email.indexOf('@');
-
-    if (atIndex < 1) {
-        return false;
-    }
-
-    const dotIndex = email.indexOf('.', atIndex);
-
-    if (dotIndex <= atIndex + 1 || dotIndex >= email.length - 2) {
-        return false;
-    }
-
-    return true;
-}
+function setCookie(name, value, days) {
+    let expires
