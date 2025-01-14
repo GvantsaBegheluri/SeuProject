@@ -1,34 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი - Gemrielia.ge</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="content">
-            <div class="nav-container">
-                <div class="first">
-                    <img src="https://gemrielia.ge/static/images/logo/logo.svg" alt="">
-                </div>
-                <div class="second">
-                    <div class="auth">
-                        <h2>შესვლა</h2>
-                        <h2>/</h2>
-                        <h2>რეგისტრაცია</h2>
-                    </div>
-                    <div class="saved">
-                        <h2>დამახსოვრებული რეცეპტები</h2>
-                    </div>
-                    <div class="search">
-                        <button class="ing" type="button" id="ing">ინგრედიენტებით ძიება</button>
-                        <input type="text" placeholder="ძიება" id="searchbox" class="searchbox">
-                    </div>
-                </div>
+    <div class="page-wrapper">
+        <header>
+            <div class="header-container">
+                <a href="./index.html" class="logo-link">
+                    <img src="https://gemrielia.ge/static/images/logo/logo.svg" alt="Gemrielia Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#"> <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="search"> <input type="text"
+                                    placeholder="ძიება"> </a></li>
+                        <li><a href="#"><img src="https://icon-library.com/images/person-icon-svg/person-icon-svg-11.jpg" alt="user">ავტორიზაცია</a></li>
+                        <li><a href="./registration.html"> რეგისტრაცია </a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </header>
+
+        <main>
+            <section class="featured-recipes">
+                <h2>პოპულარული რეცეპტები</h2>
+                <div class="recipe-container">
+                    <div class="recipe-card">
+                        <img src="https://gemrielia.ge/media/_thumb/uploads/2024/01-30/vashlis-gvezeli-1706617779.webp"
+                            alt="Recipe 1" class="recipe-image">
+                        <h3 class="recipe-title">ვაშლის ნამცხვარი ამერიკულად</h3>
+                        <div class="recipe-icons">
+                            <p>0 წთ</p>
+                            <p>მარტივი</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.YiQBECZpJyOdQ_XaFuGejwHaHt&rs=1&pid=ImgDetMain"
+                            alt="Recipe 1" class="recipe-image">
+                        <h3 class="recipe-title">ვაშლის ნამცხვარი ამერიკულად</h3>
+                        <div class="recipe-icons">
+                            <p>0 წთ</p>
+                            <p>მარტივი</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://images8.alphacoders.com/873/thumb-1920-873076.jpg"
+                            alt="Recipe 1" class="recipe-image">
+                        <h3 class="recipe-title">ვაშლის ნამცხვარი ამერიკულად</h3>
+                        <div class="recipe-icons">
+                            <p>0 წთ</p>
+                            <p>მარტივი</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://th.bing.com/th/id/R.db55c6d714cb38f0f92941398db12d51?rik=TUQC%2fBePKyJxFA&pid=ImgRaw&r=0"
+                            alt="Recipe 1" class="recipe-image">
+                        <h3 class="recipe-title">ვაშლის ნამცხვარი ამერიკულად</h3>
+                        <div class="recipe-icons">
+                            <p>0 წთ</p>
+                            <p>მარტივი</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://th.bing.com/th/id/OIP.qUJE6x17gqSP-n1P9B8O9wHaD4?rs=1&pid=ImgDetMain"
+                            alt="Recipe 1" class="recipe-image">
+                        <h3 class="recipe-title">ვაშლის ნამცხვარი ამერიკულად</h3>
+                        <div class="recipe-icons">
+                            <p>0 წთ</p>
+                            <p>მარტივი</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://images.media-allrecipes.com/userphotos/960x960/3755684.jpg"
+                            alt="Recipe 1" class="recipe-image">
+                        <h3 class="recipe-title">ვაშლის ნამცხვარი ამერიკულად</h3>
+                        <div class="recipe-icons">
+                            <p>0 წთ</p>
+                            <p>მარტივი</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://gemrielia.ge/media/_thumb/uploads/2024/03-25/namcxvari1-1711368986.webp"
+                            alt="Recipe 2" class="recipe-image">
+                        <h3 class="recipe-title">თხილის კექსი ყავის მინანქრით</h3>
+                        <div class="recipe-icons">
+                            <p>0 წთ</p>
+                            <p>მარტივი</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://gemrielia.ge/media/_thumb/uploads/2024/12-26/xrashunebi-1735213170.webp"
+                            alt="Recipe 3" class="recipe-image">
+                        <h3 class="recipe-title">ვაფლის ხვეულები</h3>
+                        <div class="recipe-icons">
+                            <p>0 წთ</p>
+                            <p>მარტივი</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="other">
+                <h3>სხვა კერძები</h3>
+                <div class="other-container">
+                    <div class="other-card">
+                        <img src="https://heymomwhatscooking.com/wp-content/uploads/2021/10/christmas-day-breakfast-casserole-to-make-ahead.jpg" alt="dish1">
+                        <p>კერძი 1</p>
+                    </div>
+                    <div class="other-card">
+                        <img src="https://images.saymedia-content.com/.image/t_share/MTc0NDIxMTcyNTY0MjcyNDg4/main-dish-salads.jpg" alt="dish2">
+                        <p>კერძი 2</p>
+                    </div>
+                    <div class="other-card">
+                        <img src="https://th.bing.com/th/id/R.f94cf7553fae72ffde043d4469552531?rik=rpyXTij%2bfTMTTQ&riu=http%3a%2f%2fouritaliantable.com%2fwp-content%2fuploads%2f2010%2f06%2fcrabmeat-pasta.jpg&ehk=EifnzejPe1GBTonvlkdik%2baqdwgigs9bmYZK%2bKGwPm4%3d&risl=&pid=ImgRaw&r=0" alt="dish3">
+                        <p>კერძი 3</p>
+                    </div>
+                    <div class="other-card">
+                        <img src="https://vegecravings.com/wp-content/uploads/2023/01/Pink-Sauce-Pasta-Recipe-Step-By-Step-Instructions-scaled.jpg" alt="dish3">
+                        <p>კერძი 3</p>
+                    </div>
+                    <div class="other-card">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.G-yQfJ8KdXUAENkcleBEOAHaEK&rs=1&pid=ImgDetMain" alt="dish3">
+                        <p>კერძი 3</p>
+                    </div>
+                    <div class="other-card">
+                        <img src="https://i.pinimg.com/originals/43/5c/30/435c3038e16c204e9245c58695acb4b6.jpg" alt="dish3">
+                        <p>კერძი 3</p>
+                    </div>
+                </div>
+            </section>
+            <section class="categories-items">
+                <h3>კატეგორიები</h3>
+                <div class="swiper categories-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide category-card">
+                            <img src="https://placehold.co/80x60/png" alt="category1">
+                            <p>კატეგორია 1</p>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="https://placehold.co/80x60/png" alt="category2">
+                            <p>კატეგორია 2</p>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="https://placehold.co/80x60/png" alt="category3">
+                            <p>კატეგორია 3</p>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="https://placehold.co/80x60/png" alt="category4">
+                            <p>კატეგორია 4</p>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="https://placehold.co/80x60/png" alt="category5">
+                            <p>კატეგორია 5</p>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="https://placehold.co/80x60/png" alt="category6">
+                            <p>კატეგორია 6</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+
+                <p>Copyright © 2024 Gemrielia.ge</p>
+
+            </div>
+        </footer>
     </div>
+    <script src="./main.js"></script>
 </body>
+
 </html>

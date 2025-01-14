@@ -1,51 +1,217 @@
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 780px;
-}
-
-.content {
-    width: 80%;
-    height: 100%;
-    background-color: #f7f8f7;
-}
-
-.second {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.first img {
-    width: 302px;
-    height: 116px;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.auth, .saved {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 15px;
-    padding: 0;
+body, h1, h2, h3, p, ul, li {
     margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+/* Set background image on the body */
+body {
+    font-family: sans-serif; 
+    color: #333; 
+    background-image: url('https://i.pinimg.com/originals/ec/c7/a4/ecc7a4f021aab13bf5197543d291adf7.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fix the background */
+    background-repeat: no-repeat;
+}
+
+/* Wrapper to create the content area with max-width */
+.page-wrapper {
+    padding: 0px 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff; /* Background color for the content area */
+}
+
+header {
+    background-color: rgba(240, 240, 240, 0.8); /* Semi-transparent background */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; 
+}
+
+.header-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-link {
+    text-decoration: none; 
+}
+
+.logo {
+    height: 50px; 
+}
+
+nav ul {
+    display: flex; 
+}
+
+nav ul li {
+    margin-left: 20px; 
+    display: flex; 
+  align-items: center; 
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+}
+nav ul li a img{
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+
+main {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 20px auto;
+}
+
+
+.featured-recipes h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #e44d26;
+}
+.featured-recipes .recipe-container{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-recipes .recipe-card {
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.featured-recipes .recipe-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom:10px;
+}
+.featured-recipes .recipe-title{
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+}
+.featured-recipes .recipe-icons{
+      display:flex;
+    justify-content: space-between;
+    align-items:center;
+     padding-top: 10px;
+
+}
+.other h3{
+   margin-bottom: 15px;
+    text-align: center;
+    color: #e44d26;
+}
+.other .other-container {
+    display: flex;
+     gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.other .other-card {
+    width: 180px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+     padding: 10px;
+    text-align: center;
+}
+.other .other-card img{
+  width:100%;
+   height: 120px;
+    object-fit: cover;
+     margin-bottom:10px;
+}
+
+.categories-items h3{
+   margin-bottom: 15px;
+    text-align: center;
+    color: #e44d26; 
+}
+
+.categories-items .categories-container{
+     display: flex;
+     gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categories-items .category-card {
+    width: 150px;
+    text-align:center;
     
 }
-
-.auth h2 {
-    padding: 5px;
+.categories-items .category-card img{
+    width: 80px;
+    height: 60px;
+    margin: 0 auto;
+    object-fit: cover;
+    display:block;
 }
 
-.auth h2, .saved h2 {
-    font-size: 14px;
-    font-weight: 300;
-    color: gray;
-    margin: 0;
-    padding: 0;
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
+
+.footer-container {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* ... Your existing CSS ... */
+
+/* Swiper container styles */
+.categories-items .swiper {
+    width: 100%;
+    padding-top: 20px; /* Add padding to make space for navigation */
+    padding-bottom: 40px; /* Add padding for pagination */
+  }
+  
+  .categories-items .swiper-slide {
+    width: auto; /* Allow slides to size dynamically */
+    
+  }
+  .categories-items .category-card{
+      width: 150px;
+      text-align:center;
+      
+  }
+  
+  /* Swiper navigation button styles */
+  .categories-items .swiper-button-next,
+  .categories-items .swiper-button-prev {
+    color: #e44d26; /* Match your heading color */
+  }
+  
+  /* Swiper pagination styles */
+  .categories-items .swiper-pagination {
+    bottom: 0; /* Position pagination at the bottom */
+  }
+  
+  .categories-items .swiper-pagination-bullet {
+    background-color: #e44d26; /* Customize bullet color */
+  }
+  
+  .categories-items .swiper-pagination-bullet-active {
+    background-color: #333; /* Customize active bullet color */
+  }
