@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <img src="https://gemrielia.ge/static/images/logo/logo.svg" alt="">
+        </div>
+        <div class="second">
+            <div class="header-itmes">
+                <h3 class="padd" id="register">რეგისტრაცია</h3>
+
+                <div class="buttons padd">
+                    <button class="fb">Facebook</button>
+                    <button class="gg">Google</button>
+                </div>
+                <div class="an padd"><div class="first-an"></div><span id="or">ან</span><div class="second-an"></div></div>
+            </div>
+            <div class="middle-items">
+                <div class="inputs">
+                    <input type="text" placeholder="ელ.ფოსტა" id="email" class="email">
+                    <input type="text" placeholder="პაროლი" id="password" class="password">
+                    <input type="text" placeholder="გაიმეორეთ პაროლი" id="password2" class="password2">
+                    <input type="date" placeholder="რეგისტრაციის თარიღი" id="date" class="date">
+                    <input type="text" placeholder="მომხმარებლის სახელი" class="id" id="id">
+                    <label for="country">აირჩიეთ ან ჩაწერეთ ქვეყანა:</label>
+                    <input list="countries" id="country" name="country" placeholder="ჩაწერეთ ან აირჩიეთ ქვეყანა">
+                    <datalist id="countries">
+                      <option value="საქართველო">
+                      <option value="საფრანგეთი">
+                      <option value="გერმანია">
+                      <option value="აშშ">
+                      <option value="იტალია">
+                      <option value="ესპანეთი">
+                      <option value="დიდი ბრიტანეთი">
+                      <option value="თურქეთი">
+                      <option value="უკრაინა">
+                      <option value="რუსეთი">
+                    </datalist>
+                    <input type="text" placeholder="ქალაქი" id="city" class="city">
+                    <label for="phone">მობილურის ნომერი:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+995 5XX XXX XXX" pattern="^\+995\s5\d{2}\s\d{3}\s\d{3}$" required>
+                    
+                    <div class="submit">
+                        <button class="sub" type="submit" id="register">რეგისტრაცია</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <script src="enum.js"></script>
+                </body>
+                </html>
