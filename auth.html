@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <a href="./index.html">
+                <img src="https://gemrielia.ge/static/images/logo/logo.svg" alt="Company Logo">
+            </a>
+        </div>
+        <div class="form-section">
+            <h2 class="form-title" id="login">ავტორიზაცია</h2>
+            <div class="social-buttons">
+                <button class="btn facebook" id="facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+                <div class="or-separator" id="or">ან</div>
+                <button class="btn google" id="google">
+                    <i class="fab fa-google"></i> Google
+                </button>
+            </div>
+            <div class="divider">
+                <div class="line"></div>
+            </div>
+            <form class="authorization-form">
+                <input type="email" placeholder="ელ.ფოსტა" id="email" class="input-field">
+                <input type="password" placeholder="პაროლი" id="password" class="input-field">
+                <button type="submit" class="btn submit-btn" id="loginButton">ავტორიზაცია</button>
+                 <div class="link-to-register">
+                    <a href="register.html" class="register-link" id="registerLink">რეგისტრაცია</a>
+                </div>
+            </form>
+        </div>
+          <div class="lang-buttons">
+          <button id="ka">KA</button>
+          <button id="en">EN</button>
+    </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="enum.js"></script>
+</body>
+</html>

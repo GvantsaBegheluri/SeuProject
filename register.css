@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -18,7 +18,7 @@ body {
     max-width: 90%;
 }
 
-/* Logo Section */
+
 .logo-section {
     text-align: center;
     padding: 20px;
@@ -29,7 +29,7 @@ body {
     max-width: 150px;
 }
 
-/* Form Section */
+
 .form-section {
     padding: 30px;
 }
@@ -40,7 +40,7 @@ body {
     color: #333;
 }
 
-/* Social Buttons */
+
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ body {
     color: #666;
 }
 
-/* Divider */
+
 .divider {
     margin: 20px 0;
 }
@@ -89,7 +89,7 @@ body {
     background-color: #ddd;
 }
 
-/* Form */
+
 .registration-form {
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ body {
 }
 
 .submit-btn {
-    background-color: #4CAF50;
+    background-color: #bddebf;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -124,7 +124,7 @@ body {
     background-color: #367c39;
 }
 
-/* Responsive */
+
 @media (max-width: 400px) {
     .social-buttons {
         flex-direction: column;

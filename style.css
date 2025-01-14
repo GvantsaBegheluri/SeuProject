@@ -4,28 +4,26 @@ body, h1, h2, h3, p, ul, li {
     list-style: none; 
 }
 
-/* Set background image on the body */
 body {
     font-family: sans-serif; 
     color: #333; 
-    background-image: url('https://i.pinimg.com/originals/ec/c7/a4/ecc7a4f021aab13bf5197543d291adf7.jpg'); /* Replace with your image URL */
+    background-image: url('https://i.pinimg.com/originals/ec/c7/a4/ecc7a4f021aab13bf5197543d291adf7.jpg'); 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Fix the background */
+    background-attachment: fixed; 
     background-repeat: no-repeat;
 }
 
-/* Wrapper to create the content area with max-width */
 .page-wrapper {
     padding: 0px 20px;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff; /* Background color for the content area */
+    background-color: #fff;
 }
 
 header {
-    background-color: rgba(240, 240, 240, 0.8); /* Semi-transparent background */
+    background-color: rgba(240, 240, 240, 0.8); 
     padding: 10px 0;
     border-bottom: 1px solid #ddd; 
 }
@@ -35,7 +33,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 
 .logo-link {
     text-decoration: none; 
@@ -67,13 +64,11 @@ nav ul li a img{
     display: block;
 }
 
-
 main {
     width: 90%; 
     max-width: 1200px; 
     margin: 20px auto;
 }
-
 
 .featured-recipes h2 {
     margin-bottom: 15px;
@@ -92,7 +87,12 @@ main {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
+     transition: transform 0.2s ease-in-out; /* added transition */
 }
+.featured-recipes .recipe-card:hover {
+    transform: scale(1.05); /* added scale on hover */
+}
+
 .featured-recipes .recipe-image {
     width: 100%;
     height: 150px;
@@ -130,6 +130,10 @@ main {
     border: 1px solid #ddd;
      padding: 10px;
     text-align: center;
+        transition: transform 0.2s ease-in-out; /* added transition */
+}
+.other .other-card:hover {
+    transform: scale(1.05); /* added scale on hover */
 }
 .other .other-card img{
   width:100%;
@@ -153,7 +157,10 @@ main {
 .categories-items .category-card {
     width: 150px;
     text-align:center;
-    
+    transition: transform 0.2s ease-in-out; /* added transition */
+}
+.categories-items .category-card:hover {
+    transform: scale(1.05); /* added scale on hover */
 }
 .categories-items .category-card img{
     width: 80px;
@@ -163,9 +170,8 @@ main {
     display:block;
 }
 
-
 footer {
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    background-color: rgba(51, 51, 51, 0.8); 
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -178,17 +184,14 @@ footer {
     margin: 0 auto; 
 }
 
-/* ... Your existing CSS ... */
-
-/* Swiper container styles */
 .categories-items .swiper {
     width: 100%;
-    padding-top: 20px; /* Add padding to make space for navigation */
-    padding-bottom: 40px; /* Add padding for pagination */
+    padding-top: 20px; 
+    padding-bottom: 40px;
   }
   
   .categories-items .swiper-slide {
-    width: auto; /* Allow slides to size dynamically */
+    width: auto; 
     
   }
   .categories-items .category-card{
@@ -197,21 +200,19 @@ footer {
       
   }
   
-  /* Swiper navigation button styles */
   .categories-items .swiper-button-next,
   .categories-items .swiper-button-prev {
-    color: #e44d26; /* Match your heading color */
+    color: #e44d26; 
   }
   
-  /* Swiper pagination styles */
   .categories-items .swiper-pagination {
-    bottom: 0; /* Position pagination at the bottom */
+    bottom: 0; 
   }
   
   .categories-items .swiper-pagination-bullet {
-    background-color: #e44d26; /* Customize bullet color */
+    background-color: #e44d26; 
   }
   
   .categories-items .swiper-pagination-bullet-active {
-    background-color: #333; /* Customize active bullet color */
+    background-color: #333; 
   }

@@ -15,14 +15,14 @@
         </div>
 
         <div class="form-section">
-            <h2 class="form-title">რეგისტრაცია</h2>
+            <h2 class="form-title" id="register">რეგისტრაცია</h2>
 
             <div class="social-buttons">
-                <button class="btn facebook">
+                <button class="btn facebook" id="facebook">
                     <i class="fab fa-facebook-f"></i> Facebook
                 </button>
-                <div class="or-separator">ან</div>
-                <button class="btn google">
+                <div class="or-separator" id="or">ან</div>
+                <button class="btn google" id="google">
                     <i class="fab fa-google"></i> Google
                 </button>
             </div>
@@ -38,7 +38,7 @@
                 <input type="date" placeholder="რეგისტრაციის თარიღი" id="date" class="input-field">
                 <input type="text" placeholder="მომხმარებლის სახელი" id="id" class="input-field">
                 
-                <label for="country" class="input-label">აირჩიეთ ან ჩაწერეთ ქვეყანა:</label>
+                <label for="country" class="input-label" id="countryLabel">აირჩიეთ ან ჩაწერეთ ქვეყანა:</label>
                 <input list="countries" id="country" name="country" placeholder="ჩაწერეთ ან აირჩიეთ ქვეყანა" class="input-field">
                 <datalist id="countries">
                     <option value="საქართველო">
@@ -55,12 +55,16 @@
 
                 <input type="text" placeholder="ქალაქი" id="city" class="input-field">
                 
-                <label for="phone" class="input-label">მობილურის ნომერი:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+995 5XX XXX XXX" pattern="^\+995\s5\d{2}\s\d{3}\s\d{3}$" required class="input-field">
+                <label for="phone" class="input-label" id="phoneLabel">მობილურის ნომერი:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+995 5XX XXX XXX" pattern="^\+995\5\d{2}\\d{3}\\d{3}$" required class="input-field">
 
-                <button type="submit" class="btn submit-btn">რეგისტრაცია</button>
+                <button type="submit" class="btn submit-btn" id="registerButton">რეგისტრაცია</button>
             </form>
         </div>
+           <div class="lang-buttons">
+                 <button id="ka">KA</button>
+                 <button id="en">EN</button>
+            </div>
     </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

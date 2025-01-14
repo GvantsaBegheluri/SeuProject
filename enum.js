@@ -3,37 +3,39 @@ let en = document.getElementById("en");
 
 async function fetchJSON(lang) {
     const url = lang === 'ka' ? 'enums/ka.json' : 'enums/en.json';
-    const response = await fetch(url);
-    return response.json();
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Could not fetch the JSON file:", error);
+        return null;
+    }
+}
+
+function updateElements(data, selector, attribute = 'textContent') {
+    if (!data) return;
+    document.querySelectorAll(selector).forEach(el => {
+      if (data.hasOwnProperty(el.id)) {
+          if(attribute == 'placeholder')
+              el.setAttribute(attribute, data[el.id]);
+          else
+            el[attribute] = data[el.id];
+        }
+    });
 }
 
 async function changeLanguage(lang) {
-    const data = await fetchJSON(lang);
+  const data = await fetchJSON(lang);
+  if (data) {
+      updateElements(data, "h2, h3, span, button");
+      updateElements(data, "input", 'placeholder');
 
-    document.querySelectorAll("h3").forEach(el => {
-        if (data[el.id]) {
-            el.textContent = data[el.id];
-        }
-    });
-
-    document.querySelectorAll("span").forEach(el => {
-        if (data[el.id]) {
-            el.textContent = data[el.id];
-        }
-    });
-
-    document.querySelectorAll("button").forEach(el => {
-        if (data[el.id]) {
-            el.textContent = data[el.id];
-        }
-    });
-
-    document.querySelectorAll("input").forEach(el => {
-        if (data[el.id]) {
-            el.placeholder = data[el.id];
-        }
-    });
+    }
 }
+
 
 en.addEventListener("click", () => {
     changeLanguage("en");
@@ -42,3 +44,5 @@ en.addEventListener("click", () => {
 ka.addEventListener("click", () => {
     changeLanguage("ka");
 });
+
+changeLanguage("ka");
