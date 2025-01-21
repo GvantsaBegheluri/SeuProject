@@ -268,3 +268,45 @@ footer {
 .lang-buttons button.active {
     background-color: #ddd;
 }
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .lang-buttons {
+        top: 20px;
+        right: 20px;
+    }
+
+    .page-wrapper {
+        padding: 0 10px;
+    }
+
+    .featured-recipes .recipe-card {
+        width: 100%;
+    }
+
+    .other .other-card {
+        width: 100%;
+    }
+
+    .categories-items .category-card {
+        width: 100%;
+    }
+
+    .categories-items .swiper {
+        padding-top: 0;
+    }
+    
+}
