@@ -53,7 +53,7 @@ async function changeLanguage(lang) {
       });
       document.getElementById(lang).classList.add('active');
       localStorage.setItem('selectedLanguage', lang);
-      document.documentElement.lang = lang; // Set the lang attribute of the <html> tag
+      document.documentElement.lang = lang; 
   }
 }
 
